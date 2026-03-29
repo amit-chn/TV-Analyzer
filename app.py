@@ -33,6 +33,14 @@ st.markdown("""
     .stHeaderActionElements {
         display: none !important;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+    html, body, [class*="css"]  {
+        font-family: 'Heebo', sans-serif !important;
+    }
+    * {
+        direction: rtl;
+        text-align: right;
+    }
 </style>
 """, unsafe_allow_html=True)
 show = st.text_input("הכנס שם סדרה באנגלית: ")
