@@ -6,50 +6,21 @@ url = "https://api.themoviedb.org/3/search/tv"
 st.title("**חוקר הסדרות** 🔎")
 st.markdown("""
 <style>
-    /* שאיבת הפונט משרתי גוגל - חייב להיות השורה הראשונה! */
-    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
-    
-    /* נשק יום הדין: החלה אגרסיבית על כל רכיב אפשרי באתר */
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video, button, input, * {
-        font-family: 'Heebo', sans-serif !important;
-    }
-    
-    /* יישור לימין של כל האתר */
     * {
         direction: rtl;
         text-align: right;
     }
-    
-    /* תיקון ספציפי לתיבת הטקסט */
     .stTextInput input {
         direction: rtl;
         text-align: right;
     }
-    
-    /* תיקון ווידג'טים (המספרים הירוקים) */
     [data-testid="stMetricValue"], [data-testid="stMetricLabel"] {
         direction: rtl;
         text-align: right;
     }
-    
-    /* העלמת הכיתוב של האנטר בתיבת חיפוש */
     div[data-testid="InputInstructions"] {
         display: none !important;
     }
-    
-    /* העלמת כפתור ה-Deploy והתפריט */
     .stAppDeployButton {
         display: none !important;
     }
@@ -59,10 +30,16 @@ st.markdown("""
     footer {
         visibility: hidden;
     }
-    
-    /* העלמת הקישורים (עוגנים) מהכותרות */
     .stHeaderActionElements {
         display: none !important;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+    html, body, [class*="css"]  {
+        font-family: 'Heebo', sans-serif !important;
+    }
+    * {
+        direction: rtl;
+        text-align: right;
     }
 </style>
 """, unsafe_allow_html=True)
